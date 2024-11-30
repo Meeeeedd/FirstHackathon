@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-us-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 2.5rem;
+    color: #6a0dad;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .about-us-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .about-us-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-us-section h2 {
+    font-size: 2rem;
+    color: #6a0dad;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+  }
+  
+  .inscription-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .inscription-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 48%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .inscription-card h3 {
+    font-size: 1.8rem;
+    color: #6a0dad;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .inscription-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .inscription-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #8a4de2;
+    transform: translateY(-2px);
+  }
+  
+  .about-us-footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 40px;
+  }
+  
+  .about-us-footer p {
+    margin-top: 20px;
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .inscription-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .inscription-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

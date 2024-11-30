@@ -1,0 +1,147 @@
+/* General Styling for Public Space */
+.public-space-container {
+    background: linear-gradient(135deg, #6a0dad, #9b4f96); /* Purple gradient background */
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff; /* White text for contrast */
+}
+
+.public-space-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.public-space-description {
+    font-size: 1.2rem;
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.public-space-icons {
+    margin: 30px 0;
+}
+
+.recycle-icon {
+    font-size: 80px;
+    color: #fff;
+    animation: bounce 1s infinite alternate;
+}
+
+.public-space-action {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.public-space-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9b4f96;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #6a0dad;
+    transform: translateY(-5px); /* Button hover effect */
+}
+
+.school-button {
+    background-color: #6a0dad;
+}
+
+.student-button {
+    background-color: #9b4f96;
+}
+
+.progress-section {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 20px;
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    background-color: #6a0dad;
+    width: 65%; /* Example progress value */
+    height: 100%;
+    border-radius: 20px;
+    transition: width 1s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .public-space-heading {
+        font-size: 2.2rem;
+    }
+
+    .public-space-description {
+        font-size: 1rem;
+    }
+
+    .action-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .public-space-heading {
+        font-size: 1.8rem;
+    }
+
+    .public-space-description {
+        font-size: 0.95rem;
+    }
+
+    .recycle-icon {
+        font-size: 60px;
+    }
+
+    .action-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

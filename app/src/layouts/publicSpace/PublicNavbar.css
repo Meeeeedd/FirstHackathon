@@ -1,0 +1,86 @@
+/* General Navbar Layout */
+.navbar {
+    background: linear-gradient(135deg, #6a0dad, #9b4f96); /* Gradient for a smoother, modern look */
+    padding: 15px 20px; /* Better padding for a more spacious look */
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly enhanced shadow for depth */
+}
+
+/* Navbar List */
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for better spacing */
+    flex-wrap: wrap; /* Ensures items wrap on small screens */
+}
+
+/* Navbar Item */
+.navbar-item {
+    display: inline-block;
+}
+
+/* Navbar Link Styling */
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px; /* Slightly larger padding for better clickability */
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    text-align: center;
+    display: inline-block;
+}
+
+/* Hover Effect for Links */
+.navbar-link:hover {
+    background-color: #9b4f96;
+    color: #fff;
+    transform: translateY(-3px); /* Subtle upward movement on hover */
+}
+
+/* Dark Mode Styling */
+.navbar.dark {
+    background-color: #34495e; /* Darker background for dark mode */
+}
+
+.navbar.dark .navbar-link {
+    color: #ecf0f1; /* Lighter text for dark mode */
+}
+
+.navbar.dark .navbar-link:hover {
+    background-color: #8e44ad; /* Dark mode hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center; /* Center items vertically on smaller screens */
+        gap: 15px; /* Reduced gap for smaller screens */
+    }
+
+    .navbar-link {
+        font-size: 1.1rem;
+        padding: 12px 25px; /* Slightly larger padding for mobile */
+        text-align: center; /* Center text on smaller screens */
+        width: 100%; /* Make links full width for better clickability */
+        border-radius: 50px; /* More rounded links */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth mobile transition */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px; /* Reduced padding for very small screens */
+    }
+
+    .navbar-link {
+        font-size: 1rem; /* Smaller font size for very small screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
